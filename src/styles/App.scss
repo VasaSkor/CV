@@ -1,3 +1,47 @@
-.test{
-  color: aqua;
+// Reset padding and margins for all elements
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Resetting List Styles
+ul, ol {
+  list-style: none;
+}
+
+// Resetting header styles
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+// Resetting link styles
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Resetting Form Styles
+input, textarea, button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+// Resetting image styles
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Resetting button styles
+button {
+  cursor: pointer;
+}
+
+// Resetting table styles
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
