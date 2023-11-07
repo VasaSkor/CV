@@ -1,12 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../styles/Header.scss'
 
 const Header = () => {
+    const [isMenuOpen, setMenuOpen] = useState(false);
+    const toggleMenu = () => {
+        setMenuOpen(!isMenuOpen);
+    };
     return (
         <header className='header'>
+            {isMenuOpen && (
+                <div className="overlay" onClick={toggleMenu}></div>
+            )}
             <div className='header__container'>
                 <nav className='header__container-nav-menu'>
-                    <ul className='header__container-nav-menu-list'>
+                    <ul  className={`header__container-nav-menu-list ${isMenuOpen ? 'open' : ''}`}>
                         <li className='header__container-nav-menu-list-element'>
                             <span className='header__container-nav-menu-list-element-text'>
                                 About
@@ -48,6 +55,11 @@ const Header = () => {
                             </span>
                         </li>
                     </ul>
+                    <div className='burger-menu' onClick={toggleMenu}>
+                        <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
+                        <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
+                        <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
+                    </div>
                 </nav>
             </div>
         </header>
