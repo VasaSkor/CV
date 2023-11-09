@@ -5,6 +5,12 @@ const Header = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => {
         setMenuOpen(!isMenuOpen);
+
+        if (!isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
     };
     return (
         <header className='header'>
