@@ -72,14 +72,12 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 15px;
+        padding: 0 20px 15px 20px;
       }
 
       &-contain{
         display: flex;
-        align-items: start;
+        align-items: flex-start;
         flex-direction: column;
       }
     }
