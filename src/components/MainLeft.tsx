@@ -25,7 +25,7 @@ const MainLeft = () => {
                         <h1 className='title'>Vasili Skorobogaty</h1>
                     </div>
                     <div className='basic_information__container_skills'>
-                        <h2 className='basic_information__container_skills title-main'>skills</h2>
+                        <h2 className='basic_information__container_skills-title title-main'>skills</h2>
                         <ul className='basic_information__container_skills_contain'>
                             <li className='skills' id='html'>
                                 <img className='skills_img' src={html} alt='html'/>
@@ -48,7 +48,7 @@ const MainLeft = () => {
                         </ul>
                     </div>
                     <div className='basic_information__container_education'>
-                        <h2 className='basic_information__container_education title-main'>
+                        <h2 className='basic_information__container_education-title title-main'>
                             education
                         </h2>
                         <span className='basic_information__container_education-text'>
@@ -56,7 +56,7 @@ const MainLeft = () => {
                         </span>
                     </div>
                     <div className='basic_information__container_courses'>
-                        <h2 className='basic_information__container_courses title-main'>
+                        <h2 className='basic_information__container_courses-title title-main'>
                             courses
                         </h2>
                             <div className='basic_information__container_courses-contain'>
@@ -74,9 +74,9 @@ const MainLeft = () => {
                                 </span>
                             </div>
                     </div>
-                    <div className='basic_information__container'>
+                    <div className='basic_information__container language'>
                         <div className='basic_information__container_language' >
-                            <h2 className='basic_information__container_language title-main'>
+                            <h2 className='basic_information__container_language-title title-main'>
                                 language
                             </h2>
                         </div>
@@ -99,7 +99,7 @@ const MainLeft = () => {
                             </span>
                         </div>
                     </div>
-                    <div className='basic_information__container'>
+                    <div className='basic_information__container contact'>
                         <div className='basic_information__container_contact' >
                             <h2 className='basic_information__container_contact title-main'>
                                 contacts
