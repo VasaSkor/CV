@@ -403,14 +403,14 @@
   }
 }
 
-@media (max-width: 640px) {
-
-}
-
 @media (max-width: 500px) {
   .language{
     width: inherit;
     align-items: start;
+  }
+
+  .basic_information__container_courses-text {
+    padding: 0 10px 15px 10px;
   }
 }
 
