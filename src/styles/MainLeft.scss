@@ -279,7 +279,7 @@
   }
 
   .basic_information{
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
     padding-top: 36px;
 
@@ -287,7 +287,8 @@
       align-items: center;
 
       &_skills{
-        width: 100vw;
+        width: 100%;
+        box-sizing: border-box;
         background: #D9D9D9;
         margin-top: 15px;
         margin-bottom: 0;
@@ -299,7 +300,8 @@
         &-title{
           display: flex;
           margin-top: 10px;
-          width: 100vw;
+          width: 100%;
+          box-sizing: border-box;
           justify-content: center;
         }
       }
@@ -320,13 +322,15 @@
 
       &_education{
         background: #D9D9D9;
-        width: 100vw;
+        width: 100%;
+        box-sizing: border-box;
         margin-bottom: 0;
 
         &-title{
           margin-top: 18px;
           display: flex;
-          width: 100vw;
+          width: 100%;
+          box-sizing: border-box;
           justify-content: center;
         }
 
@@ -338,13 +342,15 @@
 
       &_courses{
         background: #D9D9D9;
-        width: 100vw;
-        margin-bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: -1px;
 
         &-title{
           margin-top: 18px;
           display: flex;
-          width: 100vw;
+          width: 100%;
+          box-sizing: border-box;
           justify-content: center;
         }
 
@@ -355,13 +361,15 @@
 
       &_language{
         background: #D9D9D9;
-        width: 100vw;
+        width: 100%;
+        box-sizing: border-box;
         margin-bottom: 0;
 
         &-title{
           margin-top: 18px;
           display: flex;
-          width: 100vw;
+          width: 100%;
+          box-sizing: border-box;
           justify-content: center;
         }
 
@@ -399,13 +407,14 @@
   }
 
   .language{
+    width: 100%;
     background: #D9D9D9;
   }
 }
 
 @media (max-width: 500px) {
   .language{
-    width: inherit;
+    width: 100%;
     align-items: start;
   }
 
