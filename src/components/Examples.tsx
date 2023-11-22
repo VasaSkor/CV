@@ -70,11 +70,15 @@ const Examples = () => {
                             <br/>
                             <br/>
                             <span className='code-block-blue'>  function </span>
-                            <span className='code-block-red'>deepCount</span>
+                            <span className='code-block-red'>countElements</span>
                             {'(element) {'}
                             <br/>
                             <span className='code-block-blue'>      if </span>
-                            {'(Array.isArray(element)) {'}
+                            <span>(</span>
+                            <span className='code-block-red'>Array</span>
+                            <span>.</span>
+                            <span className='code-block-red'>isArray</span>
+                            <span>{'(element)) {'}</span>
                             <br/>
                             <span>        count++</span>
                             <br/>
@@ -89,10 +93,17 @@ const Examples = () => {
                             <span className='code-block-blue'>typeof </span>
                             <span>element === </span>
                             <span className='code-block-green'>'string' </span>
-                            <span>|| </span>
+                            <span>{') {'}</span>
+                            <br/>
+                            <span>          count++</span>
+                            <br/>
+                            <span>       {'}'}</span>
+                            <br/>
+                            <span className='code-block-blue'>       else if </span>
+                            <span>(</span>
                             <span className='code-block-blue'>typeof </span>
                             <span>element === </span>
-                            <span className='code-block-green'>'number'</span>
+                            <span className='code-block-green'>'number' </span>
                             <span>{') {'}</span>
                             <br/>
                             <span>          count++</span>
