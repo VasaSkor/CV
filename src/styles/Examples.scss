@@ -75,9 +75,7 @@
   letter-spacing: 1px;
   line-height: 20px;
   padding: 25px 15px 15px;
-  margin-top: 10px;
-  margin-right: 26px;
-  margin-left: 26px;
+  margin: 10px 26px 63px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -149,8 +147,7 @@
     }
   }
   .code{
-    margin-left: 0;
-    margin-right: 0;
+    margin: 10px 0 13px;
     border-radius: 0;
   }
 }
