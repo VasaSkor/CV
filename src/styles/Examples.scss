@@ -11,7 +11,7 @@
     box-sizing: border-box;
 
     &-title{
-      color: #000;
+      color: #050505;
       font-family: Inter, serif;
       text-transform: uppercase;
       font-size: 34px;
@@ -21,7 +21,7 @@
       padding-left: 62px;
       padding-bottom: 26px;
       margin: 96px 34px 24px;
-      border-bottom: 1px solid #232323;
+      border-bottom: 1px solid #232324;
     }
 
     &_contain{
@@ -37,13 +37,41 @@
         flex: 1 0 calc(50% - 40px);
         display: flex;
         flex-direction: column;
+        position: relative;
+        cursor: pointer;
+
+        &:hover .examples__container_contain-card-description {
+          display: block;
+          transition: display 0.5s;
+        }
+
+        &:hover .examples__container_contain-card_img {
+          filter: grayscale(0);
+          transition: filter 0.5s;
+        }
 
         &_img{
           filter: grayscale(1);
+          transition: filter 0.5s;
         }
 
         &-description{
           display: none;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.6);
+          padding: 15px;
+          box-sizing: border-box;
+          z-index: 1;
+          color: #FFF;
+          font-family: Inter, serif;
+          font-size: 34px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          transition: display 0.5s;
         }
       }
     }
@@ -109,6 +137,9 @@
         flex-direction: column;
         &-card{
           flex-basis: auto;
+          &-description{
+            font-size: 30px;
+          }
         }
       }
     }
@@ -137,6 +168,12 @@
         padding-left: 27px;
         padding-right: 27px;
         flex-direction: column;
+        &-card{
+          flex-basis: auto;
+          &-description{
+            font-size: 34px;
+          }
+        }
       }
       &-description{
         padding-left: 27px;
@@ -159,6 +196,12 @@
         padding-left: 11px;
         padding-right: 11px;
         gap: 20px;
+        &-card{
+          flex-basis: auto;
+          &-description{
+            font-size: 19px;
+          }
+        }
       }
       &-title{
         font-size: 26px;

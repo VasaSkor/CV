@@ -72,6 +72,14 @@
         font-weight: 400;
         line-height: normal;
         padding: 0 20px 15px 20px;
+
+        & > a:hover{
+          color: #0049ff;
+        }
+
+        & > a:active{
+          color: #4178ff;
+        }
       }
 
       &-contain{
@@ -119,10 +127,19 @@
         flex-direction: row;
         align-items: center;
 
+        &_link{
+          display: flex;
+          align-items: center;
+        }
+
         &_img{
           padding-left: 20px;
           padding-right: 15px;
           padding-bottom: 15px;
+
+          &:hover{
+            filter: invert(1);
+          }
         }
 
         &_text{
@@ -133,6 +150,14 @@
           font-weight: 400;
           line-height: normal;
           padding-bottom: 15px;
+
+          &:hover{
+            color: #0049ff;
+          }
+
+          &:active{
+            color: #4178ff;
+          }
         }
       }
     }
@@ -310,7 +335,7 @@
 
         &-contain{
           &_img{
-            padding: 14px 15px 3px 20px;
+            padding: 13px 15px 3px 20px;
           }
 
           &_text{

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 import '../styles/Examples.scss'
 import gameQuiz from '../assets/image/gameQuiz_descktop.png'
 import gemPuzzle from '../assets/image/GemPuzzle_descktop.png'
@@ -9,48 +10,60 @@ const Examples = () => {
     return (
         <section className='examples'>
             <div className='examples__container'>
-                <h2 className='examples__container-title'>Examples</h2>
+                <Element name='examples' className='examples__container-title'>Examples</Element>
                 <div className='examples__container_contain'>
-                    <div className='examples__container_contain-card'>
-                        <img
-                            className='examples__container_contain-card_img'
-                            src={gameQuiz}
-                            alt='gameQuiz'
-                        />
-                        <p className='examples__container_contain-card-description'>
-                            GameQuiz
-                        </p>
-                    </div>
-                    <div className='examples__container_contain-card'>
-                        <img
-                            className='examples__container_contain-card_img'
-                            src={gemPuzzle}
-                            alt='gemPuzzle'
-                        />
-                        <p className='examples__container_contain-card-description'>
-                            GemPuzzle
-                        </p>
-                    </div>
-                    <div className='examples__container_contain-card'>
-                        <img
-                            className='examples__container_contain-card_img'
-                            src={dangerousDave}
-                            alt='dangerousDave'
-                        />
-                        <p className='examples__container_contain-card-description'>
-                            DangerousDave
-                        </p>
-                    </div>
-                    <div className='examples__container_contain-card'>
-                        <img
-                            className='examples__container_contain-card_img'
-                            src={momento}
-                            alt='momento'
-                        />
-                        <p className='examples__container_contain-card-description'>
-                            Momento
-                        </p>
-                    </div>
+                    <a className='examples__container_contain-card'
+                       href='https://superlative-platypus-a10978.netlify.app/'>
+                        <div className='examples__container_contain-card'>
+                            <img
+                                className='examples__container_contain-card_img'
+                                src={gameQuiz}
+                                alt='gameQuiz'
+                            />
+                            <p className='examples__container_contain-card-description'>
+                                GameQuiz
+                            </p>
+                        </div>
+                    </a>
+                    <a className='examples__container_contain-card'
+                       href='https://clinquant-figolla-42ead6.netlify.app/'>
+                        <div className='examples__container_contain-card'>
+                            <img
+                                className='examples__container_contain-card_img'
+                                src={gemPuzzle}
+                                alt='gemPuzzle'
+                            />
+                            <p className='examples__container_contain-card-description'>
+                                GemPuzzle
+                            </p>
+                        </div>
+                    </a>
+                    <a className='examples__container_contain-card'
+                       href='https://hardmandev-rs-clone.netlify.app/'>
+                        <div className='examples__container_contain-card'>
+                            <img
+                                className='examples__container_contain-card_img'
+                                src={dangerousDave}
+                                alt='dangerousDave'
+                            />
+                            <p className='examples__container_contain-card-description'>
+                                DangerousDave
+                            </p>
+                        </div>
+                    </a>
+                    <a className='examples__container_contain-card'
+                       href='https://vasaskor.github.io/Momentum/'>
+                        <div className='examples__container_contain-card'>
+                            <img
+                                className='examples__container_contain-card_img'
+                                src={momento}
+                                alt='momento'
+                            />
+                            <p className='examples__container_contain-card-description'>
+                                Momento
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <div className='examples__container'>
                     <p className='examples__container-description'>

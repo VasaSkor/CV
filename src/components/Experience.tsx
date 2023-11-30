@@ -1,11 +1,12 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 import '../styles/Experience.scss'
 
 const Experience = () => {
     return (
         <section className='experience'>
             <div className='experience__container'>
-                <h2 className='experience__container-title'>Experience</h2>
+                <Element name='experience' className='experience__container-title'>Experience</Element>
                 <div className='experience__container-line'/>
                 <div className='experience__container-contain'>
                     <div className='experience__container-contain_item'>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 import photo from '../assets/image/cv.png';
 import html from '../assets/icon/html.svg'
 import css from '../assets/icon/css.svg'
@@ -24,7 +25,7 @@ const MainLeft = () => {
                     <div className='basic_information__container_title__wrap'>
                         <h1 className='title'>Vasili Skorobogaty</h1>
                     </div>
-                    <div className='basic_information__container_skills'>
+                    <Element name="skills" className='basic_information__container_skills'>
                         <h2 className='basic_information__container_skills-title title-main'>skills</h2>
                         <ul className='basic_information__container_skills_contain'>
                             <li className='skills' id='html'>
@@ -46,35 +47,51 @@ const MainLeft = () => {
                                 <img className='skills_img' src={git} alt='git'/>
                             </li>
                         </ul>
-                    </div>
-                    <div className='basic_information__container_education'>
+                    </Element>
+                    <Element name='education' className='basic_information__container_education'>
                         <h2 className='basic_information__container_education-title title-main'>
                             education
                         </h2>
                         <span className='basic_information__container_education-text'>
                             Minsk State College of Electronics, "Computer Operator", 2017-2020
                         </span>
-                    </div>
-                    <div className='basic_information__container_courses'>
+                    </Element>
+                    <Element name='courses' className='basic_information__container_courses'>
                         <h2 className='basic_information__container_courses-title title-main'>
                             courses
                         </h2>
                             <div className='basic_information__container_courses-contain'>
                                 <span className='basic_information__container_courses-text'>
-                                    JS/FE Pre-School 2022Q2 (Rs-school)
+                                    JS/FE Pre-School 2022Q2 (
+                                    <a href='https://rs.school/'>
+                                        Rs-school
+                                    </a>
+                                    )
                                 </span>
                                 <span className='basic_information__container_courses-text'>
-                                    JavaScript/Front-end 2022Q3(Rs-school)
+                                    JavaScript/Front-end 2022Q3 (
+                                     <a href='https://rs.school/'>
+                                        Rs-school
+                                     </a>
+                                    )
                                 </span>
                                 <span className='basic_information__container_courses-text'>
-                                    React 2023 Q1(Rs-school)
+                                    React 2023 Q1 (
+                                    <a href='https://rs.school/'>
+                                        Rs-school
+                                     </a>
+                                    )
                                 </span>
                                 <span className='basic_information__container_courses-text'>
-                                    Software Testing Basics (QA Academy)
+                                    Software Testing Basics (
+                                    <a href='https://qa-academy.lv/ob-akademii/'>
+                                        QA Academy
+                                    </a>
+                                    )
                                 </span>
                             </div>
-                    </div>
-                    <div className='basic_information__container language'>
+                    </Element>
+                    <Element name='language' className='basic_information__container language'>
                         <div className='basic_information__container_language' >
                             <h2 className='basic_information__container_language-title title-main'>
                                 language
@@ -98,41 +115,53 @@ const MainLeft = () => {
                                 Elementary / Pre-Intermediate
                             </span>
                         </div>
-                    </div>
-                    <div className='basic_information__container contact'>
+                    </Element>
+                    <Element name='contacts' className='basic_information__container contact'>
                         <div className='basic_information__container_contact' >
                             <h2 className='basic_information__container_contact title-main'>
                                 contacts
                             </h2>
                         </div>
                         <div className='basic_information__container_contact-contain'>
-                            <img className='basic_information__container_contact-contain_img'
-                                 src={mail}
-                                 alt='mail'
-                            />
-                            <span className='basic_information__container_contact-contain_text'>
-                                dzho.ker.700@gmail.com
-                            </span>
+                            <a  className='basic_information__container_contact-contain_link'
+                                href='mailto:dzho.ker.700@gmail.com'
+                            >
+                                <img className='basic_information__container_contact-contain_img'
+                                     src={mail}
+                                     alt='mail'
+                                />
+                                <span className='basic_information__container_contact-contain_text'>
+                                    dzho.ker.700@gmail.com
+                                </span>
+                            </a>
                         </div>
                         <div className='basic_information__container_contact-contain'>
+                            <a  className='basic_information__container_contact-contain_link'
+                                href='https://t.me/Vasya576'
+                            >
                             <img className='basic_information__container_contact-contain_img'
                                  src={phone}
                                  alt='phone'
                             />
                             <span className='basic_information__container_contact-contain_text'>
-                                +375(29)186 43 31
+                                @Vasya576
                             </span>
+                            </a>
                         </div>
                         <div className='basic_information__container_contact-contain'>
-                            <img className='basic_information__container_contact-contain_img'
-                                 src={github}
-                                 alt='github'
-                            />
-                            <span className='basic_information__container_contact-contain_text'>
-                                VasaSkor
-                            </span>
+                            <a  className='basic_information__container_contact-contain_link'
+                                href='https://github.com/VasaSkor'
+                            >
+                                <img className='basic_information__container_contact-contain_img'
+                                     src={github}
+                                     alt='github'
+                                />
+                                <span className='basic_information__container_contact-contain_text'>
+                                    VasaSkor
+                                </span>
+                            </a>
                         </div>
-                    </div>
+                    </Element>
                 </div>
             </section>
         </div>
