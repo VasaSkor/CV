@@ -343,6 +343,10 @@
         &-contain{
           &_img{
             padding: 13px 15px 3px 20px;
+
+            &:hover{
+              filter: invert(0.4);
+            }
           }
 
           &_text{
