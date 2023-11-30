@@ -1,7 +1,9 @@
+@import 'App';
+
 .footer{
   width: 100%;
   height: 75px;
-  background: #245EF4;
+  background: $blueLight;
 
   &__container{
     display: flex;
@@ -10,7 +12,7 @@
     justify-content: center;
 
     &-title{
-      color: #FFF;
+      color: $white;
       font-family: Inter, serif;
       font-size: 24px;
       font-style: normal;

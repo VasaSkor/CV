@@ -1,4 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+$black: #000;
+$blackMedium: #050505;
+$blackOpacity: rgba(0, 0, 0, 0.6);
+$blackOpacityLow: rgba(0, 0, 0, 0.5);
+$white: #fff;
+$blue: #2E95D3;
+$red: #F22C3D;
+$pink: #df3079;
+$green: #00a67d;
+$grey: #5F5F5F;
+$greyMedium: #737070;
+$greyOptional: #232324;
+$greyHight: #1B1B1B;
+$greyLight: #D9D9D9;
+$darkBlue: #001AFF;
+$blueLight: #245EF4;
+$blueLightHover: #0049ff;
+$blueLightActive: #4178ff;
+$yellow: #FFD700;
+$darkYellow: rgba(255, 215, 0, 0.8);
+$orange: #FF4500;
 
 // Reset padding and margins for all elements
 * {

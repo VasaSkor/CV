@@ -1,3 +1,5 @@
+@import 'App';
+
 .experience{
   display: flex;
   width: 100%;
@@ -12,7 +14,7 @@
     box-sizing: border-box;
 
     &-title{
-      color: #000;
+      color: $black;
       font-family: Inter, serif;
       font-size: 34px;
       font-style: normal;
@@ -28,12 +30,12 @@
       width: 95%;
       height: 2px;
       position: relative;
-      background-color: #000000;
+      background-color: $black;
 
       &::before{
         content: '';
         position: absolute;
-        border: solid #000000;
+        border: solid $black;
         border-width: 0 2px 2px 0;
         padding: 6px;
         transform: rotate(-45deg);
@@ -55,7 +57,7 @@
         border: none;
         position: relative;
         z-index: 1;
-        border-left: 2px solid #000000;
+        border-left: 2px solid $black;
         font-size: 16px;
         line-height: 20px;
         max-width: 450px;
@@ -66,7 +68,7 @@
           position: absolute;
           height: 30px;
           width: 2px;
-          background-color: #000000;
+          background-color: $black;
           top: -22px;
           left: -2px;
           z-index: -1;
@@ -77,7 +79,7 @@
           position: absolute;
           height: 10px;
           width: 10px;
-          background-color: #000000;
+          background-color: $black;
           border-radius: 50%;
           top: -25px;
           left: -6px;
@@ -86,7 +88,7 @@
         
         &-title{
           display: flex;
-          color: #000;
+          color: $black;
           font-family: Inter, serif;
           font-size: 24px;
           font-style: normal;
@@ -98,7 +100,7 @@
 
         &-sub-title{
           display: flex;
-          color: #737070;
+          color: $greyMedium;
           font-family: Inter, serif;
           font-size: 24px;
           font-style: normal;
@@ -111,7 +113,7 @@
 
         &-date{
           display: flex;
-          color: #001AFF;
+          color: $darkBlue;
           font-family: Inter, serif;
           font-size: 18px;
           font-style: normal;
@@ -153,7 +155,7 @@
   .experience{
     &__container{
       &-title{
-        border-bottom: 1px solid #1B1B1B;
+        border-bottom: 1px solid $greyHight;
         width: 100%;
         box-sizing: border-box;
         padding-left: 27px;
@@ -179,7 +181,7 @@
           &:last-child::before{
             content: '';
             position: absolute;
-            border: solid #000000;
+            border: solid $black;
             border-width: 0 2px 2px 0;
             padding: 6px;
             transform: rotate(-135deg);
@@ -213,15 +215,9 @@
 @media (max-width: 370px) {
   .experience{
     &__container{
-      &-title{
-      }
-      &-line{
-      }
       &-contain{
         &_item{
           padding: 10px 10px 10px 10px;
-          &:first-child{
-          }
         }
       }
     }
