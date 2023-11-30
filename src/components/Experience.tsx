@@ -1,42 +1,45 @@
 import React from 'react';
 import { Element } from 'react-scroll';
+import textDictionary from '../scripts/textDictionary';
 import '../styles/Experience.scss'
 
 const Experience = () => {
     return (
         <section className='experience'>
             <div className='experience__container'>
-                <Element name='experience' className='experience__container-title'>Experience</Element>
+                <Element name='experience' className='experience__container-title'>
+                    {textDictionary.experience}
+                </Element>
                 <div className='experience__container-line'/>
                 <div className='experience__container-contain'>
                     <div className='experience__container-contain_item'>
                         <div className='experience__container-contain_item-title'>
-                            Meter of electrophysical parameters of semiconductor devices
+                            {textDictionary.integralTitle}
                         </div>
                         <div className='experience__container-contain_item-sub-title'>
-                            LLC Integral
+                            {textDictionary.integralSubTitle}
                         </div>
                         <div className='experience__container-contain_item-date'>
-                            December 2020 - December 2021
+                            {textDictionary.integralDate}
                         </div>
                     </div>
                     <div className='experience__container-contain_item'>
                         <div className='experience__container-contain_item-title'>
-                            System Administrator
+                            {textDictionary.b2sTitle}
                         </div>
                         <div className='experience__container-contain_item-sub-title'>
-                            B2S invest
+                            {textDictionary.b2sSubTitle}
                         </div>
                         <div className='experience__container-contain_item-date'>
-                            January 2022 - August 2022
+                            {textDictionary.b2sDate}
                         </div>
                     </div>
                     <div className='experience__container-contain_item'>
                         <div className='experience__container-contain_item-title'>
-                            Freelancing
+                            {textDictionary.freelancingTitle}
                         </div>
                         <div className='experience__container-contain_item-date'>
-                            Mart 2023 - Now
+                            {textDictionary.freelancingDate}
                         </div>
                     </div>
                 </div>

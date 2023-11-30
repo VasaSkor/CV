@@ -1,5 +1,6 @@
 import React from 'react';
 import { Element } from 'react-scroll';
+import textDictionary from '../scripts/textDictionary';
 import photo from '../assets/image/cv.png';
 import html from '../assets/icon/html.svg'
 import css from '../assets/icon/css.svg'
@@ -23,10 +24,12 @@ const MainLeft = () => {
                         <img src={photo} alt='My_Photo'/>
                     </div>
                     <div className='basic_information__container_title__wrap'>
-                        <h1 className='title'>Vasili Skorobogaty</h1>
+                        <h1 className='title'>{textDictionary.name}</h1>
                     </div>
                     <Element name="skills" className='basic_information__container_skills'>
-                        <h2 className='basic_information__container_skills-title title-main'>skills</h2>
+                        <h2 className='basic_information__container_skills-title title-main'>
+                            {textDictionary.skills}
+                        </h2>
                         <ul className='basic_information__container_skills_contain'>
                             <li className='skills' id='html'>
                                 <img className='skills_img' src={html} alt='html'/>
@@ -50,42 +53,42 @@ const MainLeft = () => {
                     </Element>
                     <Element name='education' className='basic_information__container_education'>
                         <h2 className='basic_information__container_education-title title-main'>
-                            education
+                            {textDictionary.education}
                         </h2>
                         <span className='basic_information__container_education-text'>
-                            Minsk State College of Electronics, "Computer Operator", 2017-2020
+                            {textDictionary.mgkeTitle}
                         </span>
                     </Element>
                     <Element name='courses' className='basic_information__container_courses'>
                         <h2 className='basic_information__container_courses-title title-main'>
-                            courses
+                            {textDictionary.courses}
                         </h2>
                             <div className='basic_information__container_courses-contain'>
                                 <span className='basic_information__container_courses-text'>
-                                    JS/FE Pre-School 2022Q2 (
+                                    {textDictionary.jsFePre}
                                     <a href='https://rs.school/'>
-                                        Rs-school
+                                        {textDictionary.rsSchool}
                                     </a>
                                     )
                                 </span>
                                 <span className='basic_information__container_courses-text'>
-                                    JavaScript/Front-end 2022Q3 (
+                                    {textDictionary.jsFe}
                                      <a href='https://rs.school/'>
-                                        Rs-school
+                                        {textDictionary.rsSchool}
                                      </a>
                                     )
                                 </span>
                                 <span className='basic_information__container_courses-text'>
-                                    React 2023 Q1 (
+                                    {textDictionary.jsFe}
                                     <a href='https://rs.school/'>
-                                        Rs-school
+                                        {textDictionary.rsSchool}
                                      </a>
                                     )
                                 </span>
                                 <span className='basic_information__container_courses-text'>
-                                    Software Testing Basics (
+                                    {textDictionary.qaTitle}
                                     <a href='https://qa-academy.lv/ob-akademii/'>
-                                        QA Academy
+                                        {textDictionary.qaAcademy}
                                     </a>
                                     )
                                 </span>
@@ -94,7 +97,7 @@ const MainLeft = () => {
                     <Element name='language' className='basic_information__container language'>
                         <div className='basic_information__container_language' >
                             <h2 className='basic_information__container_language-title title-main'>
-                                language
+                                {textDictionary.language}
                             </h2>
                         </div>
                         <div className='basic_information__container_language-contain'>
@@ -103,7 +106,7 @@ const MainLeft = () => {
                                    alt='rus'
                               />
                             <span className='basic_information__container_language-contain_text'>
-                                Native
+                                {textDictionary.native}
                             </span>
                         </div>
                         <div className='basic_information__container_language-contain'>
@@ -112,14 +115,14 @@ const MainLeft = () => {
                                  alt='eng'
                             />
                             <span className='basic_information__container_language-contain_text'>
-                                Elementary / Pre-Intermediate
+                                {textDictionary.elementary}
                             </span>
                         </div>
                     </Element>
                     <Element name='contacts' className='basic_information__container contact'>
                         <div className='basic_information__container_contact' >
                             <h2 className='basic_information__container_contact title-main'>
-                                contacts
+                                {textDictionary.contacts}
                             </h2>
                         </div>
                         <div className='basic_information__container_contact-contain'>

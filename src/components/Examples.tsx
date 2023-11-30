@@ -1,5 +1,6 @@
 import React from 'react';
 import { Element } from 'react-scroll';
+import textDictionary from '../scripts/textDictionary';
 import '../styles/Examples.scss'
 import gameQuiz from '../assets/image/gameQuiz_descktop.png'
 import gemPuzzle from '../assets/image/GemPuzzle_descktop.png'
@@ -10,7 +11,7 @@ const Examples = () => {
     return (
         <section className='examples'>
             <div className='examples__container'>
-                <Element name='examples' className='examples__container-title'>Examples</Element>
+                <Element name='examples' className='examples__container-title'>{textDictionary.examples}</Element>
                 <div className='examples__container_contain'>
                     <a className='examples__container_contain-card'
                        href='https://superlative-platypus-a10978.netlify.app/'>
@@ -21,7 +22,7 @@ const Examples = () => {
                                 alt='gameQuiz'
                             />
                             <p className='examples__container_contain-card-description'>
-                                GameQuiz
+                                {textDictionary.gameQuiz}
                             </p>
                         </div>
                     </a>
@@ -34,7 +35,7 @@ const Examples = () => {
                                 alt='gemPuzzle'
                             />
                             <p className='examples__container_contain-card-description'>
-                                GemPuzzle
+                                {textDictionary.gemPuzzle}
                             </p>
                         </div>
                     </a>
@@ -47,7 +48,7 @@ const Examples = () => {
                                 alt='dangerousDave'
                             />
                             <p className='examples__container_contain-card-description'>
-                                DangerousDave
+                                {textDictionary.dangerousDave}
                             </p>
                         </div>
                     </a>
@@ -60,15 +61,14 @@ const Examples = () => {
                                 alt='momento'
                             />
                             <p className='examples__container_contain-card-description'>
-                                Momento
+                                {textDictionary.momento}
                             </p>
                         </div>
                     </a>
                 </div>
                 <div className='examples__container'>
                     <p className='examples__container-description'>
-                        <span>DESCRIPTION:</span> Create a function that returns the total number of all elements in an
-                        array (numbers, strings, nested arrays) at all nesting levels
+                        <span>{textDictionary.description}</span> {textDictionary.descriptionText}
                     </p>
                     <pre className='code'>
                         <code className='code-block'>

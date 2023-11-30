@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import  {Link} from 'react-scroll';
+import textDictionary from '../scripts/textDictionary';
 import '../styles/Header.scss'
 
 const Header = () => {
@@ -34,7 +35,7 @@ const Header = () => {
                                 onClick={toggleMenu}
                             >
                                 <span className='header__container-nav-menu-list-element-text'>
-                                    About
+                                    {textDictionary.about}
                                 </span>
                             </Link>
                         </li>
@@ -47,7 +48,7 @@ const Header = () => {
                                 onClick={toggleMenu}
                             >
                                 <span className='header__container-nav-menu-list-element-text'>
-                                    Skills
+                                    {textDictionary.skills}
                                 </span>
                             </Link>
                         </li>
@@ -60,7 +61,7 @@ const Header = () => {
                                 onClick={toggleMenu}
                             >
                                 <span className='header__container-nav-menu-list-element-text'>
-                                    Education
+                                    {textDictionary.education}
                                 </span>
                             </Link>
                         </li>
@@ -73,7 +74,7 @@ const Header = () => {
                                 onClick={toggleMenu}
                             >
                                 <span className='header__container-nav-menu-list-element-text'>
-                                    Courses
+                                    {textDictionary.courses}
                                 </span>
                             </Link>
                         </li>
@@ -86,7 +87,7 @@ const Header = () => {
                                 onClick={toggleMenu}
                             >
                                 <span className='header__container-nav-menu-list-element-text'>
-                                    Language
+                                    {textDictionary.language}
                                 </span>
                             </Link>
                         </li>
@@ -99,7 +100,7 @@ const Header = () => {
                                 onClick={toggleMenu}
                             >
                                 <span className='header__container-nav-menu-list-element-text'>
-                                    Contacts
+                                    {textDictionary.contacts}
                                 </span>
                             </Link>
                         </li>
@@ -112,7 +113,7 @@ const Header = () => {
                                 onClick={toggleMenu}
                             >
                                 <span className='header__container-nav-menu-list-element-text'>
-                                    Experience
+                                    {textDictionary.experience}
                                 </span>
                             </Link>
                         </li>
@@ -125,7 +126,7 @@ const Header = () => {
                                 onClick={toggleMenu}
                             >
                                 <span className='header__container-nav-menu-list-element-text'>
-                                    Examples
+                                    {textDictionary.examples}
                                 </span>
                             </Link>
                         </li>
